@@ -72,8 +72,11 @@ Widget listTileCreate(context) {
                     TextButton(
                         onPressed: () {
                           Navigator.pop(context);
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfilePage(),));
-
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const ProfilePage(),
+                              ));
                         },
                         child: const Text(
                           "Update",

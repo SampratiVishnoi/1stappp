@@ -18,7 +18,9 @@ class _StudentHomeState extends State<StudentHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: ResponsiveWidget.isLargeScreen(context)
-          ? PreferredSize(preferredSize: Size(screenWidth(context), 70), child: const TopBarStudent())
+          ? PreferredSize(
+              preferredSize: Size(screenWidth(context), 70),
+              child: const TopBarStudent())
           : appBarWithLogout(context, "Student HomeScreen"),
       drawer: navigationDrawerStudent(context),
       body: teachersAssigned(context),
